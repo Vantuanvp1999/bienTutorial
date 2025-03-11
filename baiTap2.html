@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="number" placeholder=Độ C (celsius) id="doC" name="doC" size="15">
+<button onclick="submit()" type="button">Nhập</button>
+<p id="hienthi"></p>
+<script>
+  function submit() {
+    let inputC = document.getElementById("doC").value;
+    let C = parseInt(inputC);
+    let F = C * 1.8 + 32;
+    document.getElementById("hienthi").innerHTML = "Results = "+F;
+
+  }
+
+</script>
 </body>
 </html>
