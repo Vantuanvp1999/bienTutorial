@@ -13,9 +13,9 @@
     inputPhysics = prompt("Nhập điểm vật lý");
     inputChemistry = prompt("Nhập điểm Hóa học");
     inputBiology = prompt("nhập điểm sinh học");
-    physics= parseFloat(inputPhysics);
-    chemistry= parseFloat(inputChemistry);
-    biology= parseFloat(inputBiology);
+    physics= parseInt(inputPhysics);
+    chemistry= parseInt(inputChemistry);
+    biology= parseInt(inputBiology);
     let average = (physics+chemistry+biology)/3;
     document.write('Điểm trung bình là ' + average)
 </script>
