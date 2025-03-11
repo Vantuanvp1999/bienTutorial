@@ -5,6 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-
+<input type="number" id="number" name="number" size="15">
+<input type="number" id="number1" name="number1" size="15"><br><br>
+<button onclick="myFunction()">Addition(+)</button>
+<button onclick="myFunction1()">Subtraction(-)</button>
+<button onclick="myFunction2()">Multiplication(X)</button>
+<button onclick="myFunction3()">Division(/)</button>
+<p id="show"></p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("number").value;
+        var y = document.getElementById("number1").value;
+        var z = x+y;
+        document.getElementById("show").innerHTML = "Result = "+z;
+    }
+    function myFunction1() {
+        var x = document.getElementById("number").value;
+        var y = document.getElementById("number1").value;
+        var z = x-y;
+        document.getElementById("show").innerHTML = "Result = "+z;
+    }
+    function myFunction2() {
+        var x = document.getElementById("number").value;
+        var y = document.getElementById("number1").value;
+        var z = x*y;
+        document.getElementById("show").innerHTML = "Result = "+z;
+    }
+    function myFunction3() {
+        var x = document.getElementById("number").value;
+        var y = document.getElementById("number1").value;
+        var z = x/y;
+        document.getElementById("show").innerHTML = "Result = "+z;
+    }
+</script>
 </body>
 </html>
